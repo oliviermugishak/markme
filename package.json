@@ -1,0 +1,41 @@
+{
+  "name": "markme",
+  "version": "1.0.1",
+  "description": "Markdown preview in cli",
+  "main": "main.js",
+  "bin": {
+    "markme": "./markme.js"
+  },
+  "scripts": {
+    "start": "node ./src/main.ts",
+    "build": "esbuild ./src/main.ts --bundle --outfile=markme.js --platform=node --format=cjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "markdown",
+    "cli",
+    "terminal",
+    "preview"
+  ],
+  "author": "crewman",
+  "license": "MIT",
+  "files": [
+    "markme.js",
+    "README.md",
+    "LICENCE"
+  ],
+  "dependencies": {
+    "marked": "^17.0.4",
+    "marked-terminal": "^7.3.0",
+    "minimist": "^1.2.8",
+    "turndown": "^7.2.2",
+    "vitest": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/marked-terminal": "^6.1.1",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^25.5.0",
+    "tsx": "^4.21.0"
+  }
+}
