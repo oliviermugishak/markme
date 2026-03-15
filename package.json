@@ -18,12 +18,16 @@
     "terminal",
     "preview"
   ],
-  "author": "crewman",
+  "author": "Olivier Mugisha",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliviermugishak/markme"
+  },
   "files": [
     "markme.js",
     "README.md",
-    "LICENCE"
+    "LICENSE"
   ],
   "dependencies": {
     "marked": "^17.0.4",
