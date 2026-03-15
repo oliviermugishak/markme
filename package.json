@@ -28,6 +28,7 @@
   "dependencies": {
     "marked": "^17.0.4",
     "marked-terminal": "^7.3.0",
+    "markme": "link:",
     "minimist": "^1.2.8",
     "turndown": "^7.2.2",
     "vitest": "^4.1.0"
