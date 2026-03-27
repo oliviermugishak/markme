@@ -8,12 +8,20 @@ PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
 
 cd "$PROJECT_ROOT"
 
+# Install deps (--ignore-scripts to prevent infinite loop from package.json install hook)
+if [ -d "node_modules" ]; then
+    echo "Dependencies already installed"
+else
+    echo "Installing dependencies..."
+    pnpm install --ignore-scripts
+fi
+
 echo "Building markme..."
-pnpm install
 pnpm build
 
 echo "Installing markme..."
 mkdir -p ~/.local/lib/markme
+mkdir -p ~/.local/bin
 
 cp markme.js ~/.local/lib/markme/
 
