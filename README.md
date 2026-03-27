@@ -68,6 +68,6 @@ MIT
 
 ## Author
 
-**Olivier Mugisha**
+**Olivier Mugisha K**
 
-GitHub: [@oliviermugishak](https://github.com/oliviermugishak/markme)
+GitHub: [@oliviermugishak](https://github.com/oliviermugishak)
